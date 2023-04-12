@@ -54,26 +54,26 @@ pizzas.forEach(pizza => pizza.id % 2 !== 0 && console.log(`La ${pizza.nombre} co
 
 // Consigna B
 
-// let msg; 
-// pizzas.findIndex(pizza => pizza.precio < 600) !== -1 ? msg= 'Existe una pizza con valor menor a $600' : msg = 'No existe una pizza con valor menor a $600'
+let msg; 
+pizzas.findIndex(pizza => pizza.precio < 600) !== -1 ? msg= 'Existe una pizza con valor menor a $600' : msg = 'No existe una pizza con valor menor a $600'
 
-// console.log(msg)
+console.log(msg)
 
 // Consigna C
 
-// pizzas.forEach(pizza => console.log(`La ${pizza.nombre} tiene un valor de $${pizza.precio}`))
+pizzas.forEach(pizza => console.log(`La ${pizza.nombre} tiene un valor de $${pizza.precio}`))
 
 // Consigna D
 
-// pizzas.forEach((pizza) => {
-//   console.log(`La ${pizza.nombre} lleva los siguientes ingredientes: ${pizza.ingredientes.join(", ")}.`)
-// })
+pizzas.forEach((pizza) => {
+  console.log(`La ${pizza.nombre} lleva los siguientes ingredientes: ${pizza.ingredientes.join(", ")}.`)
+})
 
 // Si tengo que imprimir los ingredientes separados asi:
 
 const ingredientesPorPizza = pizzas.map(pizza => pizza.ingredientes)
 
-// pizzas.forEach((pizza, i) => {
-//   console.log(`La ${pizza.nombre} lleva los siguientes ingredientes:`)
-//   ingredientesPorPizza[i].forEach(ingrediente => console.log(ingrediente))
-// })
+pizzas.forEach((pizza, i) => {
+  console.log(`La ${pizza.nombre} lleva los siguientes ingredientes:`)
+  ingredientesPorPizza[i].forEach(ingrediente => console.log(ingrediente))
+})
